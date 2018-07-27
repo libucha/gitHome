@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="view"> </div>
+</body>
+<script src="../../layui/layui.all.js"></script>
+        {{# layui.each(d.list, function(index, item){ }}
+        <li>
+            <span>{{ item.modname }}</span>
+            <span>{{ item.alias }}：</span>
+            <span>{{ item.site || '' }}</span>
+        </li>
+        {{# }); }} {{# if(d.list.length === 0){ }} 无数据 {{# } }}
+    </ul>
+</script>
+<script>
+    
+</script>
+
+
+
+
+
+</html>
